@@ -2,7 +2,7 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 const Admin = require('./models/Admin');
 
-mongoose.connect('<your_MongoDB_connection_string>', {
+mongoose.connect("mongodb+srv://pavan_db_user:temp%4012345@cluster0.9tuxh5a.mongodb.net/", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
@@ -11,9 +11,9 @@ mongoose.connect('<your_MongoDB_connection_string>', {
 
 async function createAdmin() {
   const admin = new Admin({
-    firstName: "abc",
+    firstName: "hemanth",
     lastName: "xyz",
-    email: "abc@gmail.com",
+    email: "hem@gmail.com",
     password: "xyz123", 
     role: "admin"
   });

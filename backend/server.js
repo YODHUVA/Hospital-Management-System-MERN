@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB connection
-mongoose.connect('<your_MongoDB_connection_string>', {
+mongoose.connect("mongodb+srv://pavan_db_user:temp%4012345@cluster0.9tuxh5a.mongodb.net/", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
